@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fond d'écran avec une image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop" />
+
+    <!-- Animation étoiles -->
+
+    <!-- Titre en haut de l'écran -->
+
+
+    <!-- Boutons -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="44dp">
+
+        <!-- Ajoutez ici votre animation d'étoiles -->
+        <!-- Vous pouvez utiliser une bibliothèque d'animation comme Lottie pour des animations plus complexes -->
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/addEtudiantButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#FFFFFF"
+        android:text="Ajouter un employe"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#020202"
+        android:textStyle="bold"
+        app:iconPadding="16dp"
+        app:iconSize="30dp" />
+
+    <Button
+        android:id="@+id/studentListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addEtudiantButton"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#FFFFFF"
+        android:text="Consulter la liste des employees"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#020202"
+        android:textStyle="bold"
+        app:iconPadding="16dp"
+        app:iconSize="30dp" />
+</RelativeLayout>
